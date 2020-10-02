@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Creative Box Border Hover Effects</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+			<div class="content">
+				<h2>Jalur Yang Menjalar</h2>
+				<p>
+				Reaksi anatomi kini tengah berbeda.<br>
+				Dalam mengarung suka dengan sampan lesung.<br>
+				Barangkali, harus ku seka logika yang tengah luput.<br>
+				Yang bersaing dengan panasnya siang,<br>
+				Dan bersuara lantang sebelum tiba waktunya usang.<br>
+				Rintih, lirih, bahkan tertatih-tatih.<br>
+				Menyulut bersama ragu yang menguncup.<br>
+				Dikala perpisahan yang sedang jeli mengintai.<br>
+				Ku teguk sedikit kenyataan masam.<br>
+				Agar ku sadar dan dapat sadikit bernalar.
+				</p>
+			</div>
+		</div>
+		<div class="box">
+			<div class="content">
+				<h2>Saya Yang Sayu</h2>
+				<p>
+				Sunyi mulai bergetar melawan wajar.<br>
+				Bergerak dari jelmaan hati yang palsu,<br>
+				Dan menggerhanakan seluruh logika ku.<br>
+				Melampiaskan hasrat dari dalam ruang hampa.<br>
+				Menyusup jauh kedalam angan dan jiwa.<br>
+				Melesatkan kekekalan ragu pada diri;<br>
+				Dengan sedikit bercak tanda cinta,<br>
+				Untuk menoreh kiasan bernada puja dan puji.<br>
+				Terjamah sudah seluruh derita langka,<br>
+				Berisikan jutaan kisah huru hara.<br>
+				Bercermin pada lalai yang menukik,<br>
+				Hingga mencetak sedikit senyum dalam lamun.<br>
+				</p>
+			</div>
+		</div>
+	</div>
+	<svg>
+      <filter id="wavy">
+        <feTurbulence x="0" y="0" id="turbulence" baseFrequency="0.01" numOctaves="5" seed="2">
+          <animate attributeName="baseFrequency" dur="60s" values="0.01;0.05;0.01" repeatCount="indefinite" />
+        </feTurbulence>
+        <feDisplacementMap in="SourceGraphic" scale="30" />
+      </filter>
+	  </svg>
+	  <div class="back">
+			<a href="http://127.0.0.1:5500/index.html" class="klik"><b>Back</b></a>
+		</div>
+</body>
+</html>

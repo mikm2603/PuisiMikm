@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Serif:700,700italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="asset/style.css">
+    <script src="asset/script.js"></script>
+    <title>PUISI MIKM</title>
+</head>
+<body>
+<div class="page">
+    <span class="menu_toggle">
+        <i class="menu_open fa fa-bars fa-lg"></i>
+        <i class="menu_close fa fa-times fa-lg"></i>
+    </span>
+    <ul class="menu_items">
+        <li><a class="tulmen" href="#"><i class="icon fa fa-home fa-2x"></i> Home</a></li>
+        <li><a class="tulmen" href="#"><i class="icon fa fa-user fa-2x"></i> Biografi</a></li>
+        <li><a class="tulmen" href="http://127.0.0.1:5500/puisi/index.html"><i class="icon fa fa-book fa-2x"></i> Puisi</a></li>
+    </ul>
+
+    <main class="content">
+        <div class="content_inner">
+            <h1>Website Resmi Dari :</h1>
+                <br>
+                <br>
+                <br> 
+            <div class="social">
+                <i class="fa fa-instagram"></i><a href="" class="tulsosmed">Instagram</a>
+                <br>
+                <br>
+                <i class="fa fa-facebook"></i><a href="" class="tulsosmed">Facebook</a>
+                <br>
+                <br>
+                <i class="fa fa-envelope-square"></i><a href="" class="tulsosmed">Email</a>
+            </div> 
+            <div class="jd">
+                <svg width='600' height='200'>
+                    <filter id='money'>
+                        <feMorphology in='SourceGraphic' operator='dilate' radius='2' result='expand'/>
+
+                        <feOffset in='expand' dx='1' dy='1' result='shadow_1'/>
+                        <feOffset in='expand' dx='2' dy='2' result='shadow_2'/>
+                        <feOffset in='expand' dx='3' dy='3' result='shadow_3'/>
+                        <feOffset in='expand' dx='4' dy='4' result='shadow_4'/>
+                        <feOffset in='expand' dx='5' dy='5' result='shadow_5'/>
+                        <feOffset in='expand' dx='6' dy='6' result='shadow_6'/>
+                        <feOffset in='expand' dx='7' dy='7' result='shadow_7'/>
+
+                        <feMerge result='shadow'>
+                        <feMergeNode in='expand'/>
+                        <feMergeNode in='shadow_1'/>
+                        <feMergeNode in='shadow_2'/>
+                        <feMergeNode in='shadow_3'/>
+                        <feMergeNode in='shadow_4'/>
+                        <feMergeNode in='shadow_5'/>
+                        <feMergeNode in='shadow_6'/>
+                        <feMergeNode in='shadow_7'/>
+                        </feMerge>
+
+                        <feFlood flood-color='#ebe7e0'/>
+                        <feComposite in2='shadow' operator='in' result='shadow'/>
+
+                        <feMorphology in='shadow' operator='dilate' radius='1' result='border'/>
+                        <feFlood flood-color='#35322a' result='border_color'/>
+                        <feComposite in2='border' operator='in' result='border'/>
+
+                        <feOffset in='border' dx='1' dy='1' result='secondShadow_1'/>
+                        <feOffset in='border' dx='2' dy='2' result='secondShadow_2'/>
+                        <feOffset in='border' dx='3' dy='3' result='secondShadow_3'/>
+                        <feOffset in='border' dx='4' dy='4' result='secondShadow_4'/>
+                        <feOffset in='border' dx='5' dy='5' result='secondShadow_5'/>
+                        <feOffset in='border' dx='6' dy='6' result='secondShadow_6'/>
+                        <feOffset in='border' dx='7' dy='7' result='secondShadow_7'/>
+                        <feOffset in='border' dx='8' dy='8' result='secondShadow_8'/>
+                        <feOffset in='border' dx='9' dy='9' result='secondShadow_9'/>
+                        <feOffset in='border' dx='10' dy='10' result='secondShadow_10'/>
+                        <feOffset in='border' dx='11' dy='11' result='secondShadow_11'/>
+
+                        <feMerge result='secondShadow'>
+                        <feMergeNode in='border'/>
+                        <feMergeNode in='secondShadow_1'/>
+                        <feMergeNode in='secondShadow_2'/>
+                        <feMergeNode in='secondShadow_3'/>
+                        <feMergeNode in='secondShadow_4'/>
+                        <feMergeNode in='secondShadow_5'/>
+                        <feMergeNode in='secondShadow_6'/>
+                        <feMergeNode in='secondShadow_7'/>
+                        <feMergeNode in='secondShadow_8'/>
+                        <feMergeNode in='secondShadow_9'/>
+                        <feMergeNode in='secondShadow_10'/>
+                        <feMergeNode in='secondShadow_11'/>
+                        </feMerge>
+
+                        <feImage x='0' y='0' width='600' height='200' xlink:href='https://s3-us-west-2.amazonaws.com/s.cdpn.io/78779/stripes.svg'/>
+                        <feComposite in2='secondShadow' operator='in' result='secondShadow'/>
+
+                        <feMerge>
+                        <feMergeNode in='secondShadow'/>
+                        <feMergeNode in='border'/>
+                        <feMergeNode in='shadow'/>
+                        <feMergeNode in='SourceGraphic'/>
+                        </feMerge>
+                    </filter>
+                    <text dominant-baseline='middle' text-anchor='middle' x='50%' y='50%'>
+                        PUISI.MIKM
+                    </text>
+                </svg>
+            </div>
+            <div class="isi">
+            <a class="Link" href="#">
+                <span id="tulisi" class="Link-title"><p> kumpulan karya puisi dari Muhamad Irga Khoirul Mahfis yang ditujukan hanya untuk sebatas media untuk mencurahakan rasa belaka, puisi yang terkandung didalam website ini adalah puisi yang di buat dari masa kemasa.</p></span>
+            </a>
+            </div>
+            <div class="klik">
+                <a href="#" class="hvr-bounce-in">Selengkapnya</a>
+            </div>
+        </div>
+    </main>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.js">
+
+</script>
+<script>
+    var $page = $('.page');
+
+    $('.menu_toggle').on('click', function(){
+        $page.toggleClass('shazam');
+    });
+
+    $('.content').on('click', function(){
+        $page.removeClass('shazam');
+    });
+</script>
+</body>
+</html>
